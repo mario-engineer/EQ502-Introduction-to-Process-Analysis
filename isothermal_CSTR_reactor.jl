@@ -15,8 +15,6 @@ in the CSTR from startup to a steady state.
 Define all initial conditions to solve the equations.
 Create hypotheses for your model if needed. FOGLER (1999)
 
-Use V = 40L
-
 From mass balance in the steady state we have:
 
 (F/V)*(Ca1 - Ca) - K(Ca*Cb) = 0
