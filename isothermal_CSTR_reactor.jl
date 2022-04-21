@@ -42,7 +42,7 @@ f4(Ca, Cb, Cc, Cd) = (Feed/V)*(0.0-Cd)+(k*Ca*Cb)
 ∇f3(Ca, Cb, Cc, Cd) = ForwardDiff.gradient(Ca -> f3(Ca...), [Ca; Cb; Cc; Cd])
 ∇f4(Ca, Cb, Cc, Cd) = ForwardDiff.gradient(Ca -> f4(Ca...), [Ca; Cb; Cc; Cd])
 
-#Defining the Jakobian
+#Defining the Jacobian
 J(Ca, Cb, Cc, Cd) = [∇f1(Ca, Cb, Cc, Cd)';
                      ∇f2(Ca, Cb, Cc, Cd)';
                      ∇f3(Ca, Cb, Cc, Cd)';
