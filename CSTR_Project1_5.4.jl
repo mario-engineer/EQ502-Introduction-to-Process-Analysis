@@ -47,7 +47,7 @@ using ForwardDiff, LinearAlgebra
 ∇f5(Ca, Cb, Cc, T, Tj, K) = ForwardDiff.gradient(Ca -> f5(Ca...), [Ca; Cb; Cc; T; Tj; K])
 ∇f6(Ca, Cb, Cc, T, Tj, K) = ForwardDiff.gradient(Ca -> f6(Ca...), [Ca; Cb; Cc; T; Tj; K])
 
-#Defining the Jakobian
+#Defining the Jacobian
 J(Ca, Cb, Cc, T, Tj, K) = [∇f1(Ca, Cb, Cc, T, Tj, K)';
                            ∇f2(Ca, Cb, Cc, T, Tj, K)';
                            ∇f3(Ca, Cb, Cc, T, Tj, K)';
